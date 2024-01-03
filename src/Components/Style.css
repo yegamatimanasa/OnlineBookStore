@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+body {
+  background-color: #f067b4;
+  background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+html {
+  font-size: 20px;
+}
+.header {
+  width: 100%;
+  height: 500px;
+  color: rgb(0, 3, 3);
+  box-shadow: 0 5px 10px var(#f067b4);
+  display: flex;
+  text-align: center;
+  position: relative;
+  background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.row1 {
+  margin-top: 8%;
+  margin-left: 8%;
+}
+.row2 {
+  position: absolute;
+  top: 10px;
+  text-align: right;
+  right: 150px;
+}
+.row2 h3 {
+  font-size: 0.8rem;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.row2 img {
+  margin-top: 10px;
+  border-radius: 50%;
+  height: 250px;
+  width: 300px;
+}
+.row1 h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search input {
+  outline: 0;
+  border: 4px;
+  width: 350px;
+  height: 35px;
+  font-size: 15px;
+}
+.search button {
+  outline: none;
+  border: 0;
+  height: 35px;
+  padding: 0, 0.5rem;
+  width: 30px;
+}
+.Container {
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 0.5fr));
+  grid-gap: 20px;
+  box-sizing: border-box;
+}
+.Card {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  border-radius: 0.5rem;
+  margin: 10px;
+  padding: 0.5rem;
+  position: relative;
+  box-shadow: 0 5px 5px rgb(209, 241, 241);
+  text-align: center;
+  transition: 0.5s;
+}
+
+/* .Card :hover{
+    transform: scale(0.9);
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+} */
+
+.Card .bottom {
+  display: flex;
+  flex-direction: column;
+}
+.Card .bottom .title {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.Card .bottom .amount {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+.overlay {
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.1);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay-inner {
+  background: white;
+  width: 800px;
+  height: 700px;
+  position: relative;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 1.3rem;
+  scroll-behavior: auto;
+  border-radius: 4px;
+  overflow-y: scroll;
+}
+.overlay-inner .close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background-color: goldenrod;
+}
+.overlay-inner .inner-box p {
+  font-size: large;
+}
+.overlay-inner .inner-box img {
+  margin-right: 20px;
+  height: 200px;
+  width: 250px;
+  text-align: left;
+}
+.overlay-inner .inner-box h4 {
+  margin-top: 10px;
+  color: green;
+}
+.overlay-inner .inner-box h5 {
+  margin-top: 10px;
+  color: rgb(128, 83, 0);
+}
+.text {
+  color: black;
+  font-size: large;
+}
+.overlay-inner .inner-box button {
+  outline: none;
+  border: none;
+  width: 100px;
+  border-radius: 5px;
+  height: 30px;
+  color: white;
+  background-color: blue;
+  font-weight: bold;
+  padding: 0.3rem 0.5rem;
+}
+.overlay-inner .description {
+  text-align: justify;
+  margin-top: 0.3rem;
+  font-size: 13px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.overlay-inner .inner-box button:hover {
+  background-color: rgb(86, 235, 235);
+}
